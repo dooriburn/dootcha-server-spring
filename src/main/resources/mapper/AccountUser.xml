@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dooriburn.dootcha.mapper.AccountMapper">
+    <select id="selectAccountUserById" resultType="com.dooriburn.dootcha.entity.AccountUser">
+        SELECT *
+        FROM non_sns
+        WHERE id = #{id}
+    </select>
+</mapper>
